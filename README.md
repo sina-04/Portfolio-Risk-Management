@@ -629,4 +629,8 @@ This notebook can serve as a template for:
 - Building and optimizing portfolios with Riskfolio
 - Creating high-quality, Persian-friendly visualizations
 
-To adapt it to your needs, change the symbol lists, date ranges, and Riskfolio parameters, and extend the helper functions and plots as required.
+To adapt it to your needs, change
+the symbol lists,
+date ranges,
+and Riskfolio parameters,
+and extend the helper functions and plots as required.
