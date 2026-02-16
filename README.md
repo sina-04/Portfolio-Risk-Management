@@ -620,7 +620,7 @@ This helps visually compare multi-year performance across FX and sectors.
 
 ---
 
-## Summary
+## Summary of this notebook
 
 This notebook can serve as a template for:
 
