@@ -13,14 +13,12 @@ The notebook works with **Jalali dates (1394–1404)** and demonstrates how to p
 ## Features
 
 - 📥 **Data download from TSE** via `finpy_tse` and `tse_option`
-
   - Individual stocks (e.g. `رتاپ`, `البرز`)
   - Sector indices (e.g. خودرو, فلزات اساسی)
   - Total market indices: Capital-Weighted Index (CWI) and Equal-Weighted Index (EWI)
   - Multiple symbols at once via `tse_option.download`
 
 - 📊 **Return and risk analysis**
-
   - Daily simple returns
   - Standard deviation (volatility)
   - Mean Absolute Deviation (MAD)
@@ -28,21 +26,18 @@ The notebook works with **Jalali dates (1394–1404)** and demonstrates how to p
   - Correlations between stocks, sectors, and USD
 
 - 📈 **Portfolio optimization using Riskfolio**
-
   - Historical (Classic) mean-variance framework
   - Flexible risk measures (`MV`, `MAD`, `CVaR`, `CDaR`, etc.)
   - `MinRisk`, `MaxRet`, `Sharpe`, and `Utility` objectives (example uses `MinRisk`)
   - Calculation of portfolio expected return, volatility, and CDaR
 
 - 🎨 **Persian-friendly visualization**
-
   - Right-to-left reshaping for Persian text using `python-bidi` and `arabic-reshaper`
   - Custom font (`Vazir-Bold.ttf`)
   - Pie chart of optimal portfolio weights with Persian labels
   - Yearly normalized line chart (Jalali years) of USD vs sector indices
 
 - 🧹 **Data preparation & cleaning**
-
   - Handling `J-Date` columns as time index
   - De-duplicating dates and sorting
   - Reindexing to business days and forward-filling missing values
@@ -55,7 +50,6 @@ The notebook works with **Jalali dates (1394–1404)** and demonstrates how to p
 - **Python**: 3.8+ (recommended)
 - **Jupyter Notebook** or JupyterLab
 - **Libraries** (install via `pip`):
-
   - `pandas`
   - `numpy`
   - `matplotlib`
@@ -66,11 +60,9 @@ The notebook works with **Jalali dates (1394–1404)** and demonstrates how to p
   - `python-bidi`
 
 - **Fonts**:
-
   - `Vazir-Bold.ttf` placed in the same folder as the notebook (or another Persian font you configure)
 
 - **Internet access**:
-
   - Required for downloading up-to-date TSE data via `finpy_tse` and `tse_option`
 
 ---
@@ -592,7 +584,7 @@ years = pd.Series(df.index, index=df.index).astype(str).str.slice(0, 4).astype(i
 df_yearly = df.groupby(years).last()
 df_yearly = df_yearly.loc[1394:1404]
 
-# Normalize to 100 at first year
+# Normalize to 100 at the first year
 df_yearly_norm = df_yearly / df_yearly.iloc[0] * 100
 
 series_name_map = {
