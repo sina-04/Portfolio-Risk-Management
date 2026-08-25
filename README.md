@@ -1,5 +1,12 @@
 # Portfolio Management on Tehran Stock Exchange (TSE)
 
+[![Notebook validation](https://github.com/sina-04/Portfolio-Risk-Management/actions/workflows/notebook.yml/badge.svg)](https://github.com/sina-04/Portfolio-Risk-Management/actions/workflows/notebook.yml)
+[![License: MIT](https://img.shields.io/badge/code%20license-MIT-yellow.svg)](LICENSE)
+
+> **Educational use only:** this project is not financial advice. Market data,
+> models, and historical results can be incomplete or stale and do not predict
+> future performance.
+
 ## Introduction
 
 This repository contains a Jupyter Notebook for analyzing and optimizing stock portfolios on the Tehran Stock Exchange (TSE).
@@ -64,6 +71,12 @@ The notebook works with **Jalali dates (1394–1404)** and demonstrates how to p
 
 - **Internet access**:
   - Required for downloading up-to-date TSE data via `finpy_tse` and `tse_option`
+
+For a reproducible starting environment, install the tracked dependency list:
+
+```bash
+python -m pip install -r requirements.txt
+```
 
 ---
 
@@ -626,3 +639,23 @@ the symbol lists,
 date ranges,
 and Riskfolio parameters,
 and extend the helper functions and plots as required.
+
+---
+
+## Reproducibility and data provenance
+
+- The notebook is committed without cell outputs so it does not publish stale
+  figures, downloaded market records, or local execution metadata.
+- Data is retrieved at runtime from third-party TSE tooling and remains subject
+  to the source providers' availability, corrections, and terms.
+- Record the retrieval date, package versions, selected symbols, and analysis
+  period when using results in a report.
+- The CI workflow validates notebook structure without making live market-data
+  requests.
+
+## License
+
+Original notebook code and repository documentation are available under the
+[MIT License](LICENSE). The PDF report, market data, trademarks, fonts, and
+third-party library content are not relicensed; see
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
