@@ -1,0 +1,10 @@
+arabic-reshaper>=3.0
+finpy-tse>=1.2
+jupyterlab>=4.0
+matplotlib>=3.7
+nbformat>=5.9
+numpy>=1.24
+pandas>=2.0
+python-bidi>=0.4
+riskfolio-lib>=6.0
+tse-option>=0.1.3
